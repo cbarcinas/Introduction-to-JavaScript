@@ -18,6 +18,13 @@ Do the following:
    HINT: no function required
 */
 
+  let votingAge = 18;
+
+  if (votingAge = 18) {
+    console.log(true);
+  } else {
+    console.log(false);
+  }
 
 
 /*
@@ -31,9 +38,12 @@ Do the following:
    HINT: no function required
 */
 
+let x = 10;
+let y = 20;
 
-
-
+if (x = "John") {
+  console.log(x = y);
+}
 
 /*
 Task 1c - Convert Strings to Numbers
