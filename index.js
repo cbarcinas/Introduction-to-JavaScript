@@ -141,7 +141,7 @@ function hungryDog(weight, age){
       // 7 - 12 months 4% of their body weight
       return weight * .04;
     }
-    else if ( age <= 0.583 && age >= 0.333 ){
+    else if ( age <= 0.583 && age >= 0.333 ){ 
       // 4 - 7 months 5% of their body weight
       return weight * .05;
     }
@@ -150,8 +150,8 @@ function hungryDog(weight, age){
       return weight * .1;
     }
   }
-  
-  hungryDog(25, 7);
+  hungryDog(25,7);
+
   
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 4 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
@@ -174,7 +174,44 @@ Use the game function below to do the following:
 */
 
 function game(user, computer){
-    /*add your code here*/
+//Define computer's choice
+  let computer = Math.random();
+    if ( computer <= 0.33 ){
+      computer ='rock';
+    }
+    else if ( computer <= 0.66 ) {
+      computer ="paper";
+    } 
+    else {
+      computer = "scissors";
+  }
+ // Game results , there are 3 outcomes for both computer and user
+//  user's choice
+  let user = Math.random()
+  if (
+    user === "rock" && computer === "paper" || 
+    user === "paper" && computer === "scissors" || 
+    user === "scissors" && computer === "rock"  
+    ){
+      return "you lose!"
+  } 
+
+  else if
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
   
   
