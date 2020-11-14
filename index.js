@@ -22,6 +22,8 @@ Do the following:
 
   if (votingAge = 18) {
     console.log(true);
+  } else {
+    console.log(false);
   }
 
 /*
@@ -68,11 +70,10 @@ Do the following:
 */
 
 function multiply(a,b){
-    return (2 * 5);
+    return (a * b);
   }
 
-  console.log(multiply());
-
+  console.log(multiply(2,5));
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 2 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
@@ -84,11 +85,11 @@ Do the following:
    3. Return the newly calculated age
 */
 
-function dogYears(/*add your code here*/){
-    /*add your code here*/
+function dogYears(age){
+    return age * 7;
 }
 
-
+console.log(dogYears(1));
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 3 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
