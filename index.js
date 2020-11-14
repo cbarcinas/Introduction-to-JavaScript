@@ -173,48 +173,45 @@ Use the game function below to do the following:
   HINT: While you can complete this with only conditionals based on strings, it may help to equate choice to a number when using Math.random()
 */
 
-function game(user, computer){
 //Define computer's choice
-  let computer = Math.random();
+let computer = Math.random();
     if ( computer <= 0.33 ){
-      computer ='rock';
+      computer ="rock";
     }
     else if ( computer <= 0.66 ) {
-      computer ="paper";
+      computer = "paper";
     } 
     else {
       computer = "scissors";
   }
- // Game results , there are 3 outcomes for both computer and user
-//  user's choice
-  let user = Math.random()
+
+function game(user,computer){
+
   if (
-    user === "rock" && computer === "paper" || 
-    user === "paper" && computer === "scissors" || 
-    user === "scissors" && computer === "rock"  
-    ){
-      return "you lose!"
+    (user === "rock" && computer === "scissors") ||
+    (user === "paper" && computer === "rock") ||
+    (user === "scissors" && computer === "paper")   
+  ){
+    return "you win!"
   } 
-
-  else if
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  else if (
+    (user === "rock" && computer === "paper") || 
+    (user === "paper" && computer === "scissors") || 
+    (user === "scissors" && computer === "rock")  
+  ){
+      return "you lose!"
+  }
+  else (
+    user === "rock" && computer === "rock" ||
+    user === "paper" && computer === "paper" ||
+    user === "scissors" && computer === "scissors"
+  )
+  {
+    return "it's a tie"
+  } ;
 }
-  
-  
+
+console.log(game("rock", computer));
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
@@ -223,14 +220,15 @@ function game(user, computer){
 /*
 Using the miles function below do the following:
   1. Receive a number of kilometers
-  2. Convert the number of kiolmeters received to miles
+  2. Convert the number of kiolmeters received to miles 
   3. Return the number of miles
 */
-
-function miles(/*add your code here*/){
-    /*add your code here*/
+// distance * 0.6214
+function miles(km){
+    return km * 0.621371;
   }
 
+  console.log(miles(10));
 
 
 //Task 5b - Feet to CM
