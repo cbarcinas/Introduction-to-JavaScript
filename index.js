@@ -22,10 +22,7 @@ Do the following:
 
   if (votingAge = 18) {
     console.log(true);
-  } else {
-    console.log(false);
   }
-
 
 /*
 Task 1b - Values
@@ -56,8 +53,10 @@ Do the following:
    HINT: look up the Number method
 */
 
+let string = "1999";
+var stringValue = parseFloat(string);
 
-
+console.log(stringValue);
 
 /*
 Task 1d - Multiply
@@ -68,10 +67,11 @@ Do the following:
    3. Multiply a and b and return the answer
 */
 
-function multiply(/*add your code here*/){
-    /*add your code here*/
+function multiply(a,b){
+    return (2 * 5);
   }
 
+  console.log(multiply());
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 2 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
