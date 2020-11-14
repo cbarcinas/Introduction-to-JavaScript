@@ -136,20 +136,23 @@ function hungryDog(weight, age){
       // > 15lbs - 2% of their body weight
       return weight * 0.02;
     }
+//Puppo    
     else if ( age <=1 && age >= 0.583 ){
-      // 2 - 4 months 10% of their body weight
+      // 7 - 12 months 4% of their body weight
       return weight * .04;
     }
-    else if (age){
-
+    else if ( age <= 0.583 && age >= 0.333 ){
+      // 4 - 7 months 5% of their body weight
+      return weight * .05;
+    }
+    else if ( age <= 0.333 && age >= 0.166) {
+      //2 - 4 months 10% of their body weight
+      return weight * .1;
     }
   }
-
-
-
-
-
-
+  
+  hungryDog(25, 7);
+  
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 4 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
