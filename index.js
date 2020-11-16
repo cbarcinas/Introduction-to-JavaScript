@@ -223,7 +223,7 @@ Using the miles function below do the following:
   2. Convert the number of kiolmeters received to miles 
   3. Return the number of miles
 */
-// distance * 0.6214
+
 function miles(km){
     return km * 0.621371;
   }
@@ -239,12 +239,12 @@ Using the feet function below do the following:
   3. Return number of feet
 */
 
-function feet(/*add your code here*/){
-    /*add your code here*/
+function feet(cm){
+    return cm / 30.48;
   }
+
+  console.log(feet(6));
  
-
-
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
 // Let's Sing 99 Bottles of Soda on the Wall!
@@ -255,10 +255,12 @@ Using the annoyingSong function below do the following:
       "(number) bottles of soda on the wall, (number) bottles of soda, take one down pass it around (number left over) bottles of soda on the wall"
 */
 
-function annoyingSong(/*add your code here*/){
-        /*add your code here*/
+function annoyingSong(num) {
+  for (let i = num; i > 0; --i) {
+    return `${i} bottles of soda on the wall, ${i} bottles of soda, take one down pass it around ${i-1} bottles of soda on the wall`;
   }
-
+}
+console.log(annoyingSong(5));
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
@@ -275,13 +277,27 @@ Using the grade function below do the following:
    below 60 = F
 */
   
-function grade(/*add your code here*/){
-    /*add your code here*/
+function grade(score){
+    if ( score <= 100 && score >= 90 ){
+      return('you got a A');
+    }
+    else if ( score <= 89 && score >= 80 ) {
+      return('you got a B');
+    }
+    else if( score <= 79 && score >=70 ){
+      return('you got a C');
+    }
+    else if( score <= 69 && score >= 60 ){
+      return('you got a D');
+    }
+    else ( score <= 59 )
+    {
+      return('you got a F');
+    };
   }
   
-  
-  
-  
+  console.log(grade(83));
+
 
 /*💪💪💪💪💪💪💪💪💪💪 Stretch 💪💪💪💪💪💪💪💪💪💪*/
 
